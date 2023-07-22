@@ -46,4 +46,4 @@ The Star schema is composed by the following tables:
 + `dhw.cfg` - Configuration file used that contains info about Redshift, IAM and S3.
 
 ### How to Run
-+ Check the cells on the notebook and run each one by time with Ctrl+Enter (or Shift+Enter to run an select next cell).
++ Check the cells on the notebook and run each one in turn with Ctrl+Enter (or Shift+Enter to run an select next cell).
