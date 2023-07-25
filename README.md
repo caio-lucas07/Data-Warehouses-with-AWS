@@ -45,6 +45,7 @@ The Star schema is composed by the following tables:
 + *create_tables.py* - This script will drop old tables (if exist) ad re-create new tables.
 + *etl.py* - This script executes the queries that extract JSON data from the S3 bucket, load them in the staging tables and then also ingest them to Redshift.
 + *sql_queries.py* - This file contains variables with the SQL statements, partitioned by `CREATE`, `DROP`, `COPY` and `INSERT` statement.
++ *create_cluster.py* - Create Redshift cluster via boto3, the AWS IAC (Infrastructure as Code).
 + *dhw.cfg* - Configuration file used that contains info about Redshift, IAM and S3.
 
 ### How to Run
