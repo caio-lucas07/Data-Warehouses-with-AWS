@@ -42,8 +42,12 @@ The Star schema is composed by the following tables:
 
 ### Project Structure
 
-+ `cloud_data_warehouses_final_project_CaioLucas.ipynb` - This Jupyter Notebook will contain all you need to do the entire ETL process. You will find all the instructions on it.
-+ `dhw.cfg` - Configuration file used that contains info about Redshift, IAM and S3.
++ *create_tables.py* - This script will drop old tables (if exist) ad re-create new tables.
++ *etl.py* - This script executes the queries that extract JSON data from the S3 bucket, load them in the staging tables and then also ingest them to Redshift.
++ *sql_queries.py* - This file contains variables with the SQL statements, partitioned by `CREATE`, `DROP`, `COPY` and `INSERT` statement.
++ *dhw.cfg* - Configuration file used that contains info about Redshift, IAM and S3.
 
 ### How to Run
-+ Check the cells on the notebook and run each one in turn with Ctrl+Enter (or Shift+Enter to run an select next cell).
+1. Create tables by running `create_tables.py`.
+
+2. Execute ETL process by running `etl.py`.
